@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlowerRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5002457330_b77672da1c_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jRX-Ze-QEo">
+                                <rect key="frame" x="0.0" y="74" width="414" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="gT3-Lc-9jQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGZ-Tk-sdb">
+                                <rect key="frame" x="0.0" y="534" width="414" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="f6y-5j-gO7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80H-ns-dK1">
+                                <rect key="frame" x="0.0" y="619" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mnf-SW-DmP"/>
+                                    <constraint firstAttribute="width" constant="200" id="f9c-QA-FzW"/>
+                                </constraints>
+                                <state key="normal" image="photo" catalog="system"/>
+                                <connections>
+                                    <action selector="cameraButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ab-9D-BF5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODt-fE-qt0">
+                                <rect key="frame" x="210" y="619" width="204" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wvr-Fm-Fcq"/>
+                                </constraints>
+                                <state key="normal" image="camera" catalog="system"/>
+                                <connections>
+                                    <action selector="photoGalleryButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqt-ui-58R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRb-2n-zhC">
+                                <rect key="frame" x="0.0" y="699" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pbS-2x-LOz"/>
+                                </constraints>
+                                <state key="normal" title="Çiçek Hakkında Detaylı Bilgi"/>
+                                <connections>
+                                    <action selector="detailPageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ope-5k-Rm5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bRb-2n-zhC" secondAttribute="trailing" id="2lj-3V-yhW"/>
+                            <constraint firstItem="bRb-2n-zhC" firstAttribute="top" secondItem="80H-ns-dK1" secondAttribute="bottom" constant="40" id="3Xb-Br-nEL"/>
+                            <constraint firstItem="jRX-Ze-QEo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5kn-4b-XgN"/>
+                            <constraint firstItem="bRb-2n-zhC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6IQ-dX-R4I"/>
+                            <constraint firstItem="80H-ns-dK1" firstAttribute="top" secondItem="mGZ-Tk-sdb" secondAttribute="bottom" constant="40" id="6Kp-Cn-9qG"/>
+                            <constraint firstItem="mGZ-Tk-sdb" firstAttribute="top" secondItem="jRX-Ze-QEo" secondAttribute="bottom" constant="10" id="D87-HF-jiu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jRX-Ze-QEo" secondAttribute="trailing" id="EJO-oi-Ul4"/>
+                            <constraint firstItem="mGZ-Tk-sdb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ezt-E2-Qbj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mGZ-Tk-sdb" secondAttribute="trailing" id="NpV-YM-mRz"/>
+                            <constraint firstItem="ODt-fE-qt0" firstAttribute="top" secondItem="mGZ-Tk-sdb" secondAttribute="bottom" constant="40" id="bMR-3h-Evv"/>
+                            <constraint firstItem="80H-ns-dK1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c9n-ex-lA2"/>
+                            <constraint firstItem="jRX-Ze-QEo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="fVg-cV-vx9"/>
+                            <constraint firstItem="ODt-fE-qt0" firstAttribute="leading" secondItem="80H-ns-dK1" secondAttribute="trailing" constant="10" id="g9c-h7-ThU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ODt-fE-qt0" secondAttribute="trailing" id="mHw-Ub-7hw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="flowerNameLabel" destination="mGZ-Tk-sdb" id="DgE-hw-ihH"/>
+                        <outlet property="imageView" destination="jRX-Ze-QEo" id="vdf-Kt-aQQ"/>
+                        <segue destination="lR6-IJ-60A" kind="show" id="0aG-uk-7i5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--Flowers Detail View Controller-->
+        <scene sceneID="fNM-2l-CfV">
+            <objects>
+                <viewController storyboardIdentifier="detailPage" id="lR6-IJ-60A" customClass="FlowersDetailViewController" customModule="FlowerRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1r3-Qs-7Cx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flower Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9d-kc-yDL">
+                                <rect key="frame" x="0.0" y="20" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vrY-ee-GUJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-nz-yd5">
+                                <rect key="frame" x="0.0" y="90" width="414" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="0Xb-RM-Mbu"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.aaaaaaaaaasdadas dasda dad asnd amndamndb asmndas masn dmösa dasd asmas dnas andasndömasd ma sb asmnf aösmnf öamsn öma sdmf asömdnf öamsn öma sdömn asömdn asödn öasn föLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.aaaaaaaaaasdadas dasda dad asnd amndamndb asmndas masn dmösa dasd asmas dnas andasndömasd ma sb asmnf aösmnf öamsn öma sdmf asömdnf öamsn öma sdömn asömdn asödn öasn fö</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Byv-rD-lPI">
+                                <rect key="frame" x="0.0" y="430" width="414" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="8m7-ac-jac"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJI-Bi-BIJ">
+                                <rect key="frame" x="0.0" y="620" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ACa-Ad-7Wp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Translate"/>
+                                <connections>
+                                    <action selector="translateButton:" destination="lR6-IJ-60A" eventType="touchUpInside" id="zz5-zY-ce4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ulh-xI-G95" firstAttribute="trailing" secondItem="J9d-kc-yDL" secondAttribute="trailing" id="Cng-yr-G3t"/>
+                            <constraint firstItem="BJI-Bi-BIJ" firstAttribute="top" secondItem="Byv-rD-lPI" secondAttribute="bottom" constant="40" id="JzO-MN-qAo"/>
+                            <constraint firstItem="Byv-rD-lPI" firstAttribute="leading" secondItem="Ulh-xI-G95" secondAttribute="leading" id="Le0-bd-p20"/>
+                            <constraint firstItem="J9d-kc-yDL" firstAttribute="leading" secondItem="Ulh-xI-G95" secondAttribute="leading" id="Pi0-wQ-7EZ"/>
+                            <constraint firstItem="eu9-nz-yd5" firstAttribute="top" secondItem="J9d-kc-yDL" secondAttribute="bottom" constant="30" id="U5c-m6-gQU"/>
+                            <constraint firstItem="Ulh-xI-G95" firstAttribute="trailing" secondItem="eu9-nz-yd5" secondAttribute="trailing" id="X1T-os-Oa1"/>
+                            <constraint firstItem="BJI-Bi-BIJ" firstAttribute="leading" secondItem="Ulh-xI-G95" secondAttribute="leading" id="ZsH-qi-jti"/>
+                            <constraint firstItem="J9d-kc-yDL" firstAttribute="top" secondItem="Ulh-xI-G95" secondAttribute="top" constant="20" id="eeu-fA-0AN"/>
+                            <constraint firstItem="Byv-rD-lPI" firstAttribute="trailing" secondItem="Ulh-xI-G95" secondAttribute="trailing" id="fOs-KE-Dwi"/>
+                            <constraint firstItem="Ulh-xI-G95" firstAttribute="trailing" secondItem="BJI-Bi-BIJ" secondAttribute="trailing" id="jdC-WZ-Ia1"/>
+                            <constraint firstItem="Byv-rD-lPI" firstAttribute="top" secondItem="eu9-nz-yd5" secondAttribute="bottom" constant="40" id="q0E-LM-Ebb"/>
+                            <constraint firstItem="eu9-nz-yd5" firstAttribute="leading" secondItem="Ulh-xI-G95" secondAttribute="leading" id="s34-3s-cnj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ulh-xI-G95"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fx6-9x-ZyV"/>
+                    <connections>
+                        <outlet property="detailTitleLabel" destination="J9d-kc-yDL" id="SAu-mp-V3M"/>
+                        <outlet property="flowerDetailText" destination="eu9-nz-yd5" id="kqv-Ev-0mY"/>
+                        <outlet property="translatePicker" destination="Byv-rD-lPI" id="7hJ-jy-IWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k35-FL-vsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.63768115942037" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5002457330_b77672da1c_n.jpg" width="240" height="159"/>
+        <image name="camera" catalog="system" width="128" height="96"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
