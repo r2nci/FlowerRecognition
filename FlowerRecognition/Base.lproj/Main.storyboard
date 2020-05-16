@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -131,7 +131,7 @@
                                     <constraint firstAttribute="height" constant="40" id="ACa-Ad-7Wp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Translate"/>
+                                <state key="normal" title="Çeviri"/>
                                 <connections>
                                     <action selector="translateButton:" destination="lR6-IJ-60A" eventType="touchUpInside" id="zz5-zY-ce4"/>
                                 </connections>
@@ -158,12 +158,13 @@
                     <connections>
                         <outlet property="detailTitleLabel" destination="J9d-kc-yDL" id="SAu-mp-V3M"/>
                         <outlet property="flowerDetailText" destination="eu9-nz-yd5" id="kqv-Ev-0mY"/>
+                        <outlet property="translateButton" destination="BJI-Bi-BIJ" id="qWx-FC-VPx"/>
                         <outlet property="translatePicker" destination="Byv-rD-lPI" id="7hJ-jy-IWa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k35-FL-vsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824.63768115942037" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1383" y="119"/>
         </scene>
     </scenes>
     <resources>

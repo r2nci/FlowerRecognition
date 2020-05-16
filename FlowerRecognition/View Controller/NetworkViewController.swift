@@ -1,17 +1,20 @@
 //
-//  Network.swift
+//  NetworkViewController.swift
 //  FlowerRecognition
 //
-//  Created by Ramazan ikinci on 16.04.2020.
+//  Created by Ramazan ikinci on 1.05.2020.
 //  Copyright © 2020 Ramazan ikinci. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Alamofire
 import SwiftyJSON
 
-class Network {
+
+class NetworkViewController: UIViewController {
     
+    
+    var secondVC =  FlowersDetailViewController()
     var flowerName = ""
     let wikipediURL = "https://tr.wikipedia.org/w/api.php"
     let translateURL = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20191009T133952Z.0ba3f80453afac3b.f20ad425f69b3f293a7cd9b0df8e561b1d67e5ab&"
@@ -20,6 +23,12 @@ class Network {
     var flowerDescription = ""
     var deneme = ""
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        
+    }
     
     func yandexRequest(translate:String)->String{
         
@@ -30,29 +39,11 @@ class Network {
                 self.translateName = json["text"][0].stringValue
                 print("alamofire ıcı",self.translateName)
                 
-            }          
+            }
         }
         print(translateName,"-----------------")
         return translateName
     }
     
-    func wikipediRequest()->String {
-        let parameters : [String:String] = ["format" : "json", "action" : "query", "prop" : "extracts|pageimages", "exintro" : "", "explaintext" : "", "titles" : flowerName, "redirects" : "1", "pithumbsize" : "500", "indexpageids" : ""]
-        
-        
-        Alamofire.request(wikipediURL, method: .get,parameters: parameters).responseJSON { (response) in
-            if response.result.isSuccess {
-                
-                let json : JSON = JSON(response.result.value)
-                let pageid = json["query"]["pageids"][0].stringValue
-                self.flowerDescription = json["query"]["pages"][pageid]["extract"].stringValue
-                
-               
-            }
-                
-       
-    }
-         
-         return flowerDescription
-    }
+    
 }

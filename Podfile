@@ -9,4 +9,6 @@ target 'FlowerRecognition' do
 pod 'Alamofire'
 
 pod 'SwiftyJSON'
+pod 'Alamofire-Synchronous', '~> 4.0'
+pod 'AlamofireImage'
 end

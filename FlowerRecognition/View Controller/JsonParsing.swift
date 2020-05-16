@@ -14,6 +14,7 @@ class jsonParsing{
     
     func jsonTranslateParsing(json:JSON)->String{
         let isim = json["text"][0].stringValue
+        print("parsing ıcı",isim)
         return isim
         
     }

@@ -28,12 +28,17 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         imagePicker.delegate = self
         detect(flowerImage: CIImage(image: imageView.image!)!)
-    }
+        print(network.wikipediRequest(),"4567890")
+        acıklama = network.wikipediRequest()
     
+    
+    }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
@@ -46,6 +51,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
             imageView.image = pickedImage
             
             detect(flowerImage: ciImage)
+            
         }
         
         imagePicker.dismiss(animated: true, completion: nil)
@@ -70,6 +76,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     func detect(flowerImage: CIImage) {
         
+        
         guard let model = try? VNCoreMLModel(for: FlowersMlModel().model) else {
             fatalError("Can't load model")
         }
@@ -81,33 +88,33 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
             
             self.flowerNameLabel.text = result.identifier.capitalized
             self.flowerName = result.identifier.capitalized
-           
+            
         }
-       
-                   
+        
+        
         
         let handler = VNImageRequestHandler(ciImage: flowerImage)
         
         do {
             try handler.perform([request])
+            
         }
         catch {
             print(error)
         }
-       
-      
+        
+        
         
     }
     
     
-
     @IBAction func detailPageButton(_ sender: UIButton) {
         
         
         let sb = (storyboard?.instantiateViewController(identifier: "detailPage"))! as FlowersDetailViewController
         sb.flowerName = flowerName
         network.flowerName=flowerName
-        sb.acıklama = "\(acıklama)---"
+//        sb.acıklama = acıklama
         present(sb, animated: true, completion: nil)
     }
     
