@@ -26,7 +26,7 @@ class FlowersDetailViewController: UIViewController,UIPickerViewDelegate,UIPicke
     var network = Network()
     var parsing = jsonParsing()
     var selectedLang  = ""
-    var acıklama = "deneme"
+    var acıklama = ""
     let wikipediURL = "https://tr.wikipedia.org/w/api.php"
     let translateURL = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20191009T133952Z.0ba3f80453afac3b.f20ad425f69b3f293a7cd9b0df8e561b1d67e5ab&"
     var translateName = ""
@@ -115,20 +115,7 @@ class FlowersDetailViewController: UIViewController,UIPickerViewDelegate,UIPicke
         
         
     }
-//
-//    func translateButtonTittle(word:String) {
-//        var url3 = "\(translateURL)text=\(word)&lang=tr-\(selectedLang)"
-//        print(url3,"url3333")
-//        Alamofire.request(url3, method: .get).responseJSON {
-//            (response) in
-//            if response.result.isSuccess {
-//                let json : JSON = JSON(response.result.value)
-//                var newTittle = json["text"][0].stringValue
-//                print(newTittle,"----newttile")
-//                self.translateButton.setTitle(newTittle, for: .normal)
-//
-//            }   }
-//    }
+
     
         func translateWikipedi(info:String){
             print(selectedLang,"---------------")

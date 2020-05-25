@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5002457330_b77672da1c_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jRX-Ze-QEo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5504fd3fcf60c3dd192ba31f67baacf5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jRX-Ze-QEo">
                                 <rect key="frame" x="0.0" y="74" width="414" height="450"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="450" id="gT3-Lc-9jQ"/>
@@ -30,19 +30,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80H-ns-dK1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80H-ns-dK1">
                                 <rect key="frame" x="0.0" y="619" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.74901960784313726" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Mnf-SW-DmP"/>
                                     <constraint firstAttribute="width" constant="200" id="f9c-QA-FzW"/>
                                 </constraints>
-                                <state key="normal" image="photo" catalog="system"/>
+                                <state key="normal" image="photo" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="cameraButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ab-9D-BF5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODt-fE-qt0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODt-fE-qt0">
                                 <rect key="frame" x="210" y="619" width="204" height="40"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.74901960784313726" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="wvr-Fm-Fcq"/>
                                 </constraints>
@@ -51,18 +56,22 @@
                                     <action selector="photoGalleryButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqt-ui-58R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRb-2n-zhC">
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRb-2n-zhC">
                                 <rect key="frame" x="0.0" y="699" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.74901960784313726" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="pbS-2x-LOz"/>
                                 </constraints>
-                                <state key="normal" title="Çiçek Hakkında Detaylı Bilgi"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
+                                <state key="normal" title="Çiçek Hakkında Detaylı Bilgi İçin Tıklaynız">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="detailPageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ope-5k-Rm5"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.63529411764705879" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bRb-2n-zhC" secondAttribute="trailing" id="2lj-3V-yhW"/>
                             <constraint firstItem="bRb-2n-zhC" firstAttribute="top" secondItem="80H-ns-dK1" secondAttribute="bottom" constant="40" id="3Xb-Br-nEL"/>
@@ -110,11 +119,10 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-nz-yd5">
                                 <rect key="frame" x="0.0" y="90" width="414" height="300"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.78431372549019607" green="0.63529411764705879" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="0Xb-RM-Mbu"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.aaaaaaaaaasdadas dasda dad asnd amndamndb asmndas masn dmösa dasd asmas dnas andasndömasd ma sb asmnf aösmnf öamsn öma sdmf asömdnf öamsn öma sdömn asömdn asödn öasn föLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.aaaaaaaaaasdadas dasda dad asnd amndamndb asmndas masn dmösa dasd asmas dnas andasndömasd ma sb asmnf aösmnf öamsn öma sdmf asömdnf öamsn öma sdömn asömdn asödn öasn fö</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -127,6 +135,7 @@
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJI-Bi-BIJ">
                                 <rect key="frame" x="0.0" y="620" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.74901960784313726" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ACa-Ad-7Wp"/>
                                 </constraints>
@@ -137,7 +146,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.63529411764705879" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ulh-xI-G95" firstAttribute="trailing" secondItem="J9d-kc-yDL" secondAttribute="trailing" id="Cng-yr-G3t"/>
                             <constraint firstItem="BJI-Bi-BIJ" firstAttribute="top" secondItem="Byv-rD-lPI" secondAttribute="bottom" constant="40" id="JzO-MN-qAo"/>
@@ -168,7 +177,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="5002457330_b77672da1c_n.jpg" width="240" height="159"/>
+        <image name="5504fd3fcf60c3dd192ba31f67baacf5.jpg" width="235" height="294"/>
         <image name="camera" catalog="system" width="128" height="96"/>
         <image name="photo" catalog="system" width="128" height="93"/>
     </resources>

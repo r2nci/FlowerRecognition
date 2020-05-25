@@ -34,7 +34,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         
         imagePicker.delegate = self
         detect(flowerImage: CIImage(image: imageView.image!)!)
-        print(network.wikipediRequest(),"4567890")
+        print(network.wikipediRequest())
         acıklama = network.wikipediRequest()
     
     
@@ -77,7 +77,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     func detect(flowerImage: CIImage) {
         
         
-        guard let model = try? VNCoreMLModel(for: FlowersMlModel().model) else {
+        guard let model = try? VNCoreMLModel(for: cicekMlModel4().model) else {
             fatalError("Can't load model")
         }
         
