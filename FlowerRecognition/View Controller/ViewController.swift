@@ -77,7 +77,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     func detect(flowerImage: CIImage) {
         
         
-        guard let model = try? VNCoreMLModel(for: cicekMlModel4().model) else {
+        guard let model = try? VNCoreMLModel(for: cicekMlModel7().model) else {
             fatalError("Can't load model")
         }
         

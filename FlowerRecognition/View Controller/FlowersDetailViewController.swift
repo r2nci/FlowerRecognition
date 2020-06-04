@@ -81,6 +81,7 @@ class FlowersDetailViewController: UIViewController,UIPickerViewDelegate,UIPicke
     
     
     func networkRequest(flowerName:String){
+        
         let parameters : [String:String] = ["format" : "json", "action" : "query", "prop" : "extracts|pageimages", "exintro" : "", "explaintext" : "", "titles" : flowerName, "redirects" : "1", "pithumbsize" : "500", "indexpageids" : ""]
         
         Alamofire.request(wikipediURL, method: .get,parameters: parameters).responseJSON { (response) in
@@ -102,12 +103,21 @@ class FlowersDetailViewController: UIViewController,UIPickerViewDelegate,UIPicke
     func tranlateLang(wordsa:String){
         
         let url = "\(translateURL)text=\(wordsa)&lang=tr-\(selectedLang)"
-        Alamofire.request(url, method: .get).responseJSON { (response) in
+        print("----------------------------",url)
+        var key = "trnsl.1.1.20191009T133952Z.0ba3f80453afac3b.f20ad425f69b3f293a7cd9b0df8e561b1d67e5ab"
+        var deneme = "tr-\(selectedLang)"
+        guard var components = URLComponents(string: translateURL) else { return }
+        components.queryItems = [
+            URLQueryItem(name: "key", value: key),
+            URLQueryItem(name: "text", value: wordsa),
+            URLQueryItem(name: "lang", value: deneme)
+        ]
+        Alamofire.request(components, method: .get).responseJSON { (response) in
             if response.result.isSuccess {
                 let json : JSON = JSON(response.result.value)
                 self.translateName = json["text"][0].stringValue
                 self.detailTitleLabel.text = self.translateName
-               
+                
             }
             
             
@@ -115,37 +125,37 @@ class FlowersDetailViewController: UIViewController,UIPickerViewDelegate,UIPicke
         
         
     }
-
     
-        func translateWikipedi(info:String){
-            print(selectedLang,"---------------")
-            if selectedLang == ""
-            {
-                selectedLang = "tr"
-            }
-            
-            var key = "trnsl.1.1.20191009T133952Z.0ba3f80453afac3b.f20ad425f69b3f293a7cd9b0df8e561b1d67e5ab"
-            var deneme = "tr-\(selectedLang)"
-            guard var components = URLComponents(string: translateURL) else { return }
-            components.queryItems = [
-                URLQueryItem(name: "key", value: key),
-                URLQueryItem(name: "text", value: info),
-                URLQueryItem(name: "lang", value: deneme)
-            ]
-            
-            
-            
-            
-            let url = "\(translateURL)text=\(info)&lang=tr-\(selectedLang)"
-            Alamofire.request(components, method: .get).responseJSON { (response) in
-                if response.result.isSuccess {
-                    let json : JSON = JSON(response.result.value)
-                    self.translateName = json["text"][0].stringValue
-                    self.flowerDetailText.text = self.translateName
-                    print(self.translateName,"234567890*")
-                }
-            }
+    
+    func translateWikipedi(info:String){
+        print(selectedLang,"---------------")
+        if selectedLang == ""
+        {
+            selectedLang = "tr"
         }
         
+        var key = "trnsl.1.1.20191009T133952Z.0ba3f80453afac3b.f20ad425f69b3f293a7cd9b0df8e561b1d67e5ab"
+        var deneme = "tr-\(selectedLang)"
+        guard var components = URLComponents(string: translateURL) else { return }
+        components.queryItems = [
+            URLQueryItem(name: "key", value: key),
+            URLQueryItem(name: "text", value: info),
+            URLQueryItem(name: "lang", value: deneme)
+        ]
         
+        
+        
+        
+        let url = "\(translateURL)text=\(info)&lang=tr-\(selectedLang)"
+        Alamofire.request(components, method: .get).responseJSON { (response) in
+            if response.result.isSuccess {
+                let json : JSON = JSON(response.result.value)
+                self.translateName = json["text"][0].stringValue
+                self.flowerDetailText.text = self.translateName
+                print(self.translateName,"234567890*")
+            }
+        }
+    }
+    
+    
 }

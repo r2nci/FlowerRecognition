@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D044081247D982000E64295 /* cicekMlModel7.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0D044080247D982000E64295 /* cicekMlModel7.mlmodel */; };
 		0D06B2A12448742F000992D8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06B2A02448742F000992D8 /* Network.swift */; };
-		0D0BD5A22475469900BF809F /* cicekMlModel4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0D0BD5A12475469900BF809F /* cicekMlModel4.mlmodel */; };
 		0D69BA2B2445C714008CEC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69BA2A2445C714008CEC59 /* AppDelegate.swift */; };
 		0D69BA2D2445C714008CEC59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69BA2C2445C714008CEC59 /* SceneDelegate.swift */; };
 		0D69BA2F2445C714008CEC59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69BA2E2445C714008CEC59 /* ViewController.swift */; };
@@ -18,7 +18,6 @@
 		0D962922244CBE1C008ABE4E /* JsonParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D962921244CBE1C008ABE4E /* JsonParsing.swift */; };
 		0DA6AE272447308C00E1497F /* FlowersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA6AE262447308C00E1497F /* FlowersDetailViewController.swift */; };
 		0DA6AE29244730C800E1497F /* 5002457330_b77672da1c_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DA6AE28244730C800E1497F /* 5002457330_b77672da1c_n.jpg */; };
-		0DAB467E24472A7100C91BA9 /* FlowersMlModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0DAB467D24472A7000C91BA9 /* FlowersMlModel.mlmodel */; };
 		0DC2E8332476ABD20038E4B9 /* 160af880d50f1295475e0956e420c1eb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DC2E8322476ABD20038E4B9 /* 160af880d50f1295475e0956e420c1eb.jpg */; };
 		0DC2E8352476B5C10038E4B9 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DC2E8342476B5C00038E4B9 /* download.jpeg */; };
 		0DC2E8372476B70F0038E4B9 /* fb316fd3c304ce16abe7ae739ba9ea0f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DC2E8362476B70E0038E4B9 /* fb316fd3c304ce16abe7ae739ba9ea0f.jpg */; };
@@ -28,8 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D044080247D982000E64295 /* cicekMlModel7.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = cicekMlModel7.mlmodel; sourceTree = "<group>"; };
 		0D06B2A02448742F000992D8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		0D0BD5A12475469900BF809F /* cicekMlModel4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = cicekMlModel4.mlmodel; sourceTree = "<group>"; };
 		0D69BA272445C714008CEC59 /* FlowerRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D69BA2A2445C714008CEC59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D69BA2C2445C714008CEC59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +40,6 @@
 		0D962921244CBE1C008ABE4E /* JsonParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParsing.swift; sourceTree = "<group>"; };
 		0DA6AE262447308C00E1497F /* FlowersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersDetailViewController.swift; sourceTree = "<group>"; };
 		0DA6AE28244730C800E1497F /* 5002457330_b77672da1c_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5002457330_b77672da1c_n.jpg; sourceTree = "<group>"; };
-		0DAB467D24472A7000C91BA9 /* FlowersMlModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowersMlModel.mlmodel; sourceTree = "<group>"; };
 		0DC2E8322476ABD20038E4B9 /* 160af880d50f1295475e0956e420c1eb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 160af880d50f1295475e0956e420c1eb.jpg; sourceTree = "<group>"; };
 		0DC2E8342476B5C00038E4B9 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		0DC2E8362476B70E0038E4B9 /* fb316fd3c304ce16abe7ae739ba9ea0f.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fb316fd3c304ce16abe7ae739ba9ea0f.jpg; sourceTree = "<group>"; };
@@ -96,9 +94,8 @@
 				0DC2E8322476ABD20038E4B9 /* 160af880d50f1295475e0956e420c1eb.jpg */,
 				0DC2E8362476B70E0038E4B9 /* fb316fd3c304ce16abe7ae739ba9ea0f.jpg */,
 				0DC2E8382476B78C0038E4B9 /* 5504fd3fcf60c3dd192ba31f67baacf5.jpg */,
+				0D044080247D982000E64295 /* cicekMlModel7.mlmodel */,
 				0DC2E83A2476B7930038E4B9 /* bedab3abf8d22415c4b20cfb73b881a9.jpg */,
-				0D0BD5A12475469900BF809F /* cicekMlModel4.mlmodel */,
-				0DAB467D24472A7000C91BA9 /* FlowersMlModel.mlmodel */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -279,11 +276,10 @@
 			files = (
 				0DA6AE272447308C00E1497F /* FlowersDetailViewController.swift in Sources */,
 				0D69BA2F2445C714008CEC59 /* ViewController.swift in Sources */,
-				0D0BD5A22475469900BF809F /* cicekMlModel4.mlmodel in Sources */,
 				0D962922244CBE1C008ABE4E /* JsonParsing.swift in Sources */,
 				0D06B2A12448742F000992D8 /* Network.swift in Sources */,
+				0D044081247D982000E64295 /* cicekMlModel7.mlmodel in Sources */,
 				0D69BA2B2445C714008CEC59 /* AppDelegate.swift in Sources */,
-				0DAB467E24472A7100C91BA9 /* FlowersMlModel.mlmodel in Sources */,
 				0D69BA2D2445C714008CEC59 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
